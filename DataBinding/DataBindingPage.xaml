@@ -1,4 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:DataBinding" x:Class="DataBinding.DataBindingPage">
-	<Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />
+	<StackLayout Padding="20" VerticalOptions="Center">
+        <Label Text="{Binding Source={x:Reference mSlider}, Path=Value}" Rotation="{Binding Source={x:Reference mSlider}, Path=Value}"/>
+        <Slider x:Name="mSlider" Maximum="360" Minimum="0"/>
+
+        <Entry Text="{Binding Source={x:Reference mText}, Path=Text}" HeightRequest="38"/>
+        <Entry Text="" x:Name="mText" Placeholder="enter text..." HeightRequest="38"/>
+    </StackLayout>
 </ContentPage>
