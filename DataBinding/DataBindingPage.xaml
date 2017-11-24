@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:DataBinding" x:Class="DataBinding.DataBindingPage">
-	<StackLayout x:Name="mStack" Padding="20" VerticalOptions="Center">
-        <!--<Label Text="{Binding Source={x:Reference mSlider}, Path=Value}" Rotation="{Binding Source={x:Reference mSlider}, Path=Value}"/>
+    <!--<Label Text="{Binding Source={x:Reference mSlider}, Path=Value}" Rotation="{Binding Source={x:Reference mSlider}, Path=Value}"/>
         <Slider x:Name="mSlider" Maximum="360" Minimum="0"/>
 
         <Entry Text="{Binding Source={x:Reference mText}, Path=Text}" HeightRequest="38"/>
         <Entry Text="" x:Name="mText" Placeholder="enter text..." HeightRequest="38"/>-->
-
-        <Slider x:Name="mSlider" Maximum="360" Minimum="0"/>
-        <Label Text="{Binding Path=Name}"/>
-        <Label Text="{Binding Path=Type}"/>
-        <Label Text="{Binding Value}" BindingContext="{x:Reference mSlider}"/>
-        
-    </StackLayout>
+    <ScrollView>
+        <StackLayout Padding="20" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout x:Name="mStack" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Slider x:Name="mSlider" Maximum="360" Minimum="0" />
+                <Label Text="{Binding Path=Name}" />
+                <Label Text="{Binding Path=Type}" />
+                <Label Text="{Binding Value}" BindingContext="{x:Reference mSlider}" />
+            </StackLayout>
+            <StackLayout Margin="0,0,0,10" Padding="20" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="Silver">
+                <Label Text="Mode: OneWay" />
+                <Entry HeightRequest="40" x:Name="lbl1" Text="{Binding Source={x:Reference lbl2}, Path=Text, Mode=OneWay}" />
+                <Entry Placeholder="Source" HeightRequest="40" x:Name="lbl2" />
+            </StackLayout>
+            <StackLayout Margin="0,0,0,10" Padding="20" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="Silver">
+                <Label Text="Mode: TwoWay" />
+                <Entry HeightRequest="40" x:Name="lbl3" Text="{Binding Source={x:Reference lbl4}, Path=Text, Mode=TwoWay}" />
+                <Entry Placeholder="Source" HeightRequest="40" x:Name="lbl4" />
+            </StackLayout>
+            <StackLayout Margin="0,0,0,10" Padding="20" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="Silver">
+                <Label Text="Mode: OneWayToSource" />
+                <Entry HeightRequest="40" x:Name="lbl5" Text="{Binding Source={x:Reference lbl6}, Path=Text, Mode=OneWayToSource}" />
+                <Entry Placeholder="Source" HeightRequest="40" x:Name="lbl6" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
