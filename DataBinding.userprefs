@@ -1,7 +1,9 @@
 ﻿<Properties StartupConfiguration="{2C15CF19-7016-4454-B71A-453F0F8F5C34}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DataBinding/DataBindingPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataBinding/DataBindingPage.xaml.cs">
     <Files>
-      <File FileName="DataBinding/DataBindingPage.xaml" Line="3" Column="69" />
+      <File FileName="DataBinding/DataBindingPage.xaml" Line="10" Column="17" />
+      <File FileName="DataBinding/Pokemon.cs" Line="6" Column="9" />
+      <File FileName="DataBinding/DataBindingPage.xaml.cs" Line="7" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,7 +11,9 @@
           <Node name="DataBinding" expanded="True">
             <Node name="DataBinding" expanded="True">
               <Node name="App.xaml" expanded="True" />
-              <Node name="DataBindingPage.xaml" selected="True" />
+              <Node name="DataBindingPage.xaml" expanded="True">
+                <Node name="DataBindingPage.xaml.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
