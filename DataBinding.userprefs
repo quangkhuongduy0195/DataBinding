@@ -1,32 +1,18 @@
 ﻿<Properties StartupConfiguration="{2C15CF19-7016-4454-B71A-453F0F8F5C34}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DataBinding/DataBindingPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataBinding/Pokemon.cs">
     <Files>
-      <File FileName="DataBinding/DataBindingPage.xaml" Line="10" Column="17" />
-      <File FileName="DataBinding/Pokemon.cs" Line="6" Column="9" />
-      <File FileName="DataBinding/DataBindingPage.xaml.cs" Line="7" Column="19" />
+      <File FileName="DataBinding/Pokemon.cs" Line="5" Column="46" />
+      <File FileName="DataBinding/DataBindingPage.xaml.cs" Line="24" Column="2" />
+      <File FileName="DataBinding/DataBindingPage.xaml" Line="1433" Column="15" />
+      <File FileName="DataBinding/obj/Debug/DataBinding.DataBindingPage.xaml.g.cs" Line="47" Column="92" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="DataBinding" expanded="True">
-            <Node name="DataBinding" expanded="True">
-              <Node name="App.xaml" expanded="True" />
-              <Node name="DataBindingPage.xaml" expanded="True">
-                <Node name="DataBindingPage.xaml.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.DataBinding.Droid PreferredExecutionTarget="Android.Nexus_5X_API_24" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.DataBinding.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.c315044c279b997965cb58cd9bd3053a38b6cef1">
-    <MonoDevelop.MacDev.AppleDevelopmentTeam />
-  </MonoDevelop.Ide.ItemProperties.DataBinding.iOS>
+  <MonoDevelop.Ide.ItemProperties.DataBinding.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A2F90225-C45B-4278-A273-4FFED0BEEB5D" />
   <MultiItemStartupConfigurations />
 </Properties>

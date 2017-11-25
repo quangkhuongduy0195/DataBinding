@@ -6,12 +6,13 @@
         <Entry Text="{Binding Source={x:Reference mText}, Path=Text}" HeightRequest="38"/>
         <Entry Text="" x:Name="mText" Placeholder="enter text..." HeightRequest="38"/>-->
     <ScrollView>
-        <StackLayout Padding="20" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <StackLayout Padding="20" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <StackLayout x:Name="mStack" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                 <Slider x:Name="mSlider" Maximum="360" Minimum="0" />
                 <Label Text="{Binding Path=Name}" />
                 <Label Text="{Binding Path=Type}" />
                 <Label Text="{Binding Value}" BindingContext="{x:Reference mSlider}" />
+                <Button x:Name="btn" Text="Change Name" Clicked="Handle_ClickedAsync" />
             </StackLayout>
             <StackLayout Margin="0,0,0,10" Padding="20" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="Silver">
                 <Label Text="Mode: OneWay" />
